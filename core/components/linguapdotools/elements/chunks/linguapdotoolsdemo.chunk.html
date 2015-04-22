@@ -1,0 +1,52 @@
+[[!pdoMenu? 
+&includeTVs=`lang_published`
+&startId=`0`
+&where=`{"TVlang_published.value":"1"}`
+&rowTpl=`linguaRowTpl`
+]]
+
+[[!pdoResources? 
+&includeTVs=`lang_published`
+&where=`{"TVlang_published.value":"1"}`
+&parents=`0`
+&tpl=`linguaRowTpl`
+]]
+
+<h2>description</h2>
+<p>List only translated Resources in the current Language within Lingua with pdoTools - snippets</p>
+
+<h2>Requirements</h2>
+<ul>
+<li>pdoTools and Lingua has to be installed</li>
+</ul>
+
+<h2>Installation</h2>
+<ol>
+<li>Install linguaPdoTools from package-management</li>
+<li>Create a file core/model/modx/pdotools/linguafetch.class.php with this content:</li>
+<ul>
+<li><textarea cols="100">
+<?php
+require MODX_CORE_PATH . 'components/linguapdotools/model/linguapdotools/linguafetch.class.php';
+</textarea></li>
+</ul>
+<li>Update pdoTools-systemsetting pdoFetch.class to 'pdotools.linguafetch'</li>
+</ol>
+
+
+<h2>Setup Instructions</h2>
+<ol>
+<li>Create listbox-TV 'lang_published'</li>
+<ul>
+<li>Input-Option-Values: no==no||yes==1</li>
+<li>Default Value: no</li>
+<li>Add this TV to translated Lingua-TVS</li>
+<li>No you can use pdoTools-snippets with:</li>
+<ul>
+<li><textarea cols="100">
+&includeTVs=`lang_published`
+&where=`{"TVlang_published.value":"1"}`
+</textarea></li>
+</ul>
+</ul>
+</ol>
