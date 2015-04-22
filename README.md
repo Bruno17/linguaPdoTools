@@ -22,7 +22,7 @@ require MODX_CORE_PATH . 'components/linguapdotools/model/linguapdotools/linguaf
   - Input-Option-Values: no==no||yes==1
   - Default Value: no
   - Add this TV to translated Lingua-TVS
-  - No you can use pdoTools-snippets with:
+  - Now you can use pdoTools-snippets with:
   
   ```
   &includeTVs=`lang_published`
