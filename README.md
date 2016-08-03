@@ -7,14 +7,8 @@ List only translated Resources in the current Language within Lingua with pdoToo
 ### Installation
 
 - Install linguaPdoTools from package-management
-- Create a file core/model/modx/pdotools/linguafetch.class.php with this content:
-
-```
-<?php
-require MODX_CORE_PATH . 'components/linguapdotools/model/linguapdotools/linguafetch.class.php';
-```
-
-- Update pdoTools-systemsetting pdoFetch.class to 'pdotools.linguafetch'
+- Update pdoTools-systemsetting pdoFetch.class to 'linguapdotools.linguafetch'
+- Update pdoTools-systemsetting pdofetch_class_path to '{core_path}components/linguapdotools/model/'
 
 ### Setup Instructions
 
